@@ -1,0 +1,8 @@
+﻿  CalculatorForm.cpp
+c:\users\gshamian\desktop\engineeringcalculator\realisation\engineering calculator\stackcalculator.h(76): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\gshamian\desktop\engineeringcalculator\realisation\engineering calculator\stackcalculator.h(91): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\gshamian\desktop\engineeringcalculator\realisation\engineering calculator\stackcalculator.h(33): warning C4715: triga: значение возвращается не при всех путях выполнения
+c:\users\gshamian\desktop\engineeringcalculator\realisation\engineering calculator\stackcalculator.h(47): warning C4715: operations: значение возвращается не при всех путях выполнения
+c:\users\gshamian\desktop\engineeringcalculator\realisation\engineering calculator\stackcalculator.h(61): warning C4715: check: значение возвращается не при всех путях выполнения
+  CalculatorForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Engineering Calculator.vcxproj -> C:\Users\gshamian\Desktop\EngineeringCalculator\Realisation\x64\Debug\Engineering Calculator.exe

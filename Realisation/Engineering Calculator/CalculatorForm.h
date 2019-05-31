@@ -554,6 +554,7 @@ namespace EngineeringCalculator {
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->KeyPreview = true;
 			this->MaximizeBox = false;
+			this->MinimizeBox = false;
 			this->Name = L"CalculatorForm";
 			this->Text = L"Engineering Calculator";
 			this->ResumeLayout(false);
@@ -562,61 +563,61 @@ namespace EngineeringCalculator {
 #pragma endregion
 
 	private: System::Void num1_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "1";
 		else
 			input->Text += "1";
 	}
 	private: System::Void num2_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "2";
 		else
 			input->Text += "2";
 	}
 	private: System::Void num3_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "3";
 		else
 			input->Text += "3";
 	}
 	private: System::Void num4_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "4";
 		else
 			input->Text += "4";
 	}
 	private: System::Void num5_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "5";
 		else
 			input->Text += "5";
 	}
 	private: System::Void num6_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "6";
 		else
 			input->Text += "6";
 	}
 	private: System::Void num7_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "7";
 		else
 			input->Text += "7";
 	}
 	private: System::Void num8_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "8";
 		else
 			input->Text += "8";
 	}
 	private: System::Void num9_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "9";
 		else
 			input->Text += "9";
 	}
 	private: System::Void num0_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "0";
 		else
 			input->Text += "0";
@@ -625,73 +626,73 @@ namespace EngineeringCalculator {
 		input->Text = "0";
 	}
 	private: System::Void opBracket_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "(";
 		else
 			input->Text += "(";
 	}
 	private: System::Void clBracket_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = ")";
 		else
 			input->Text += ")";
 	}
 	private: System::Void plus_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "+";
 		else
 			input->Text += "+";
 	}
 	private: System::Void minus_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "-";
 		else
 			input->Text += "-";
 	}
 	private: System::Void divide_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text += "/";
 		else
 			input->Text += "/";
 	}
 	private: System::Void multiply_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text += "*";
 		else
 			input->Text += "*";
 	}
 	private: System::Void trSin_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "sin(";
 		else
 			input->Text += "sin(";
 	}
 	private: System::Void trCos_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "cos(";
 		else
 			input->Text += "cos(";
 	}
 	private: System::Void trTg_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "tg(";
 		else
 			input->Text += "tg(";
 	}
 	private: System::Void trCtg_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "ctg(";
 		else
 			input->Text += "ctg(";
 	}
 	private: System::Void trExp_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "exp(";
 		else
 			input->Text += "exp(";
 	}
 	private: System::Void trLog_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "log(";
 		else
 			input->Text += "log(";
@@ -700,25 +701,25 @@ namespace EngineeringCalculator {
 		input->Text = gcnew System::String(ansI(msclr::interop::marshal_as<std::string>(input->Text)).c_str());
 	}
 	private: System::Void point_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
-			input->Text = ".";
+		if (input->Text == "0" || input->Text == "Error")
+			input->Text = "0.";
 		else
 			input->Text += ".";
 	}
 	private: System::Void expForm_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "E";
 		else
 			input->Text += "E";
 	}
 	private: System::Void power_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
-			input->Text = "^";
+		if (input->Text == "0" || input->Text == "Error")
+			input->Text = "0^";
 		else
 			input->Text += "^";
 	}
 	private: System::Void trPi_Click(System::Object^  sender, System::EventArgs^  e) {
-		if (input->Text == "0")
+		if (input->Text == "0" || input->Text == "Error")
 			input->Text = "pi";
 		else
 			input->Text += "pi";

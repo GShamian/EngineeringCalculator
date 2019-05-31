@@ -134,7 +134,7 @@ string ansI(string s)
 		}
 	}
 
-	for (int i = 0; i < s.length(); i++)//error checking
+	for (int i = 0; i < s.length(); i++)
 	{
 		if (s[i] == '/' && s[i + 1] == '0' && s[i + 2] != '.') z++;
 		if (s[i] == '(') k++;
@@ -144,7 +144,7 @@ string ansI(string s)
 	if (k != m || z != 0)
 		return "Error";
 
-	if (k == m && z == 0)//error checking
+	if (k == m && z == 0)
 	{
 		if (isdigit(s[0]))
 			result += s[0];
@@ -195,7 +195,6 @@ string ansI(string s)
 						{
 							char tmp = stack.back();
 							stack.pop_back();
-
 							result += " ";
 							result += tmp;
 							if (!stack.empty())
@@ -242,8 +241,12 @@ string ansI(string s)
 				}
 				else
 				{
+					if (stack2.size() == 0)
+						return "Error";
 					double1 = stack2.back();
 					stack2.pop_back();
+					if (stack2.size() == 0)
+						return "Error";
 					double2 = stack2.back();
 					stack2.pop_back();
 					double3 = operations(double1, double2, a[0]);
